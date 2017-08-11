@@ -1,1 +1,57 @@
-"Hello World" 
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <title>Felix Eli Lopez Aguirre</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            .side-nav .side-nav-header{
+                padding: 100px 30px;
+                text-align: right;
+            }
+            .side-nav-header h3,.side-nav-header p {
+                margin-bottom: 0px;
+                margin-top: 0px;
+
+            }
+            header a.button-collapse {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+            }
+
+            header a.button-collapse  i{
+                    font-size: 2.5em;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <ul id="slide-out" class="side-nav fixed">
+                <li class="side-nav-header  deep-purple darken-1 white-text">
+                    <h3>Eli Aguirre</h3>
+                    <p>
+                        Ing. en Sistemas Computacionales
+                    </p>
+                </li>
+                <li><a href="#!"><i class="material-icons red-text ">person</i> Perfil</a></li>
+                <li><a href="#!"><i class="material-icons green-text">update</i> Experiencia</a></li>
+                <li><a href="#!"><i class="material-icons orange-text">show_chart</i> Skills</a></li>
+                <li><a href="#!"><i class="material-icons teal-text">layers</i> Proyectos</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons purple-text darken-1">menu</i></a>
+        </header>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                  $(".button-collapse").sideNav();
+
+            });
+
+        </script>
+    </body>
+</html>
