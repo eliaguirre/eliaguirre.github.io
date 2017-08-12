@@ -22,6 +22,10 @@
         {
             "nombre": "Python",
             "icon": "res/img/python.png"
+        },
+        {
+            "nombre": "Bash",
+            "icon": "res/img/bash.png"
         }
     ],
     "frameworks": [{
@@ -35,6 +39,44 @@
         {
             "nombre": ".NET MVC",
             "icon": "res/img/aspmvc.png"
+        },
+        {
+            "nombre": "Codeigniter",
+            "icon": "res/img/Codeigniter.png"
+        },
+        {
+            "nombre": "Express JS",
+            "icon": "res/img/express.png"
+        }
+    ],
+    "tools": [{
+            "nombre": "Git",
+            "icon": "res/img/git.png"
+        },
+        {
+            "nombre": "Maven",
+            "icon": "res/img/maven.png"
+        },
+        {
+            "nombre": "Nuget",
+            "icon": "res/img/nuget.jpg"
+        },
+        {
+            "nombre": "Vim",
+            "icon": "res/img/vim.png"
+        }
+    ],
+    "movil": [{
+            "nombre": "Xamarin Forms",
+            "icon": "res/img/xamarin.png"
+        },
+        {
+            "nombre": "Android",
+            "icon": "res/img/android.jpg"
+        },
+        {
+            "nombre": "Cordova",
+            "icon": "res/img/cordova.png"
         }
     ]
 }

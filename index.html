@@ -64,6 +64,11 @@
             padding: 12px;
             text-align: center;
         }
+        .cita{
+            border-left: 3px solid #5e35b1;
+            padding-left: 20px;
+            margin-top: 52px;
+        }
     </style>
 </head>
 
@@ -95,6 +100,14 @@
 
                     <h5>Developer Web and Mobile<h5>
                 </div>
+                <div class="cita">
+                    <p>
+                        Tel: 951 294 31 55
+                    </p>
+                    <p>
+                        Correo: f.eli.x@hotmail.es
+                    </p>
+                </div>
                 <div>
                     <button class="btn-floating btn-large waves-effect waves-light red " style="position: absolute; bottom: 30px; right: 60px;">
                         <i class="material-icons ">chevron_right</i>
@@ -110,11 +123,17 @@
             <div class="container">
                 <h2 class="header" >Habilidades</h2>
                 <div class="divider"></div>
-                <h5>Lenguajes</h5>
+                    <h5>Lenguajes</h5>
                     <div class="row lenguajes">
                     </div>
                     <h5>Frameworks</h5>
                     <div class="row frameworks">
+                    </div>
+                    <h5>Desarrollo Movil</h5>
+                    <div class="row movil">
+                    </div>
+                    <h5>Tools</h5>
+                    <div class="row tools">
                     </div>
                 </div>
             </div>
@@ -150,6 +169,20 @@
                     var len = res.frameworks[i];
                     var t = $(template);
                     $(".frameworks").append(t);
+                    t.find(".nombre").text(len.nombre);
+                    t.find(".imagen").attr("src", len.icon);
+                }
+                for (var i in res.tools) {
+                    var len = res.tools[i];
+                    var t = $(template);
+                    $(".tools").append(t);
+                    t.find(".nombre").text(len.nombre);
+                    t.find(".imagen").attr("src", len.icon);
+                }
+                for (var i in res.movil) {
+                    var len = res.movil[i];
+                    var t = $(template);
+                    $(".movil").append(t);
                     t.find(".nombre").text(len.nombre);
                     t.find(".imagen").attr("src", len.icon);
                 }
