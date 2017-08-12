@@ -1,57 +1,163 @@
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, user-scalable=no">
-        <title>Felix Eli Lopez Aguirre</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <style>
-            .side-nav .side-nav-header{
-                padding: 100px 30px;
-                text-align: right;
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Felix Eli Lopez Aguirre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .side-nav .side-nav-header {
+            padding: 100px 30px;
+            text-align: right;
+        }
+
+        .side-nav-header h3,
+        .side-nav-header p {
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        header a.button-collapse {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+
+        header a.button-collapse i {
+            font-size: 2.5em;
+        }
+
+        header,
+        main,
+        footer {
+            padding-left: 300px;
+        }
+
+        @media only screen and (max-width: 992px) {
+            header,
+            main,
+            footer {
+                padding-left: 0;
             }
-            .side-nav-header h3,.side-nav-header p {
-                margin-bottom: 0px;
-                margin-top: 0px;
+        }
 
-            }
-            header a.button-collapse {
-                position: fixed;
-                top: 10px;
-                left: 10px;
-            }
+        main>div {
+            height: 100%;
+        }
 
-            header a.button-collapse  i{
-                    font-size: 2.5em;
+        img.center,
+        button.center {
+            margin: 0px auto;
+            display: block;
+        }
 
-            }
+        .header {
+            color: #f44336;
+            font-weight: 300;
+        }
 
-        </style>
-    </head>
-    <body>
-        <header>
-            <ul id="slide-out" class="side-nav fixed">
-                <li class="side-nav-header  deep-purple darken-1 white-text">
-                    <h3>Eli Aguirre</h3>
-                    <p>
-                        Ing. en Sistemas Computacionales
-                    </p>
-                </li>
-                <li><a href="#!"><i class="material-icons red-text ">person</i> Perfil</a></li>
-                <li><a href="#!"><i class="material-icons green-text">update</i> Experiencia</a></li>
-                <li><a href="#!"><i class="material-icons orange-text">show_chart</i> Skills</a></li>
-                <li><a href="#!"><i class="material-icons teal-text">layers</i> Proyectos</a></li>
-            </ul>
-            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons purple-text darken-1">menu</i></a>
-        </header>
-        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-        <script>
-            $(document).ready(function(){
+        .card-lenguajes {
+            width: 150px
+        }
 
-                  $(".button-collapse").sideNav();
+        .card .card-content {
+            padding: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul id="slide-out" class="side-nav fixed z-depth-4">
+            <li class="side-nav-header  deep-purple darken-1 white-text">
+                <h3>Eli Aguirre</h3>
+                <p>
+                    Ing. en Sistemas Computacionales
+                </p>
+            </li>
+            <li><a href="#main"><i class="material-icons red-text ">person</i> Perfil</a></li>
+            <li><a href="#experiencia"><i class="material-icons green-text">update</i> Experiencia</a></li>
+            <li><a href="#skills"><i class="material-icons orange-text">show_chart</i> Skills</a></li>
+            <li><a href="#!"><i class="material-icons teal-text">layers</i> Proyectos</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons purple-text darken-1">menu</i></a>
+    </header>
+    <main>
+        <div id="main">
+            <div class="container">
+                <div style="margin-top:30px"></div>
+                <img class="responsive-img circle center z-depth-2" src="res/img/perfil_min.jpg">
+                <div class="center">
+                    <h3>
+                        Felix Eli Lopez Aguirre
+                    </h3>
+
+                    <h5>Developer Web and Mobile<h5>
+                </div>
+                <div>
+                    <button class="btn-floating btn-large waves-effect waves-light red " style="position: absolute; bottom: 30px; right: 60px;">
+                        <i class="material-icons ">chevron_right</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="experiencia">
+            <div class="container">
+            </div>
+        </div>
+        <div id="skills" style="padding-top:30px">
+            <div class="container">
+                <h2 class="header" >Habilidades</h2>
+                <div class="divider"></div>
+                <h5>Lenguajes</h5>
+                    <div class="row lenguajes">
+                    </div>
+                    <h5>Frameworks</h5>
+                    <div class="row frameworks">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div style="display:none" id="template-lenguaje">
+        <div class="col card-lenguajes">
+            <div class="card">
+                <div class="card-image">
+                    <img class="imagen">
+                </div>
+                <div class="card-content">
+                    <p class="nombre"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".button-collapse").sideNav();
+            $.getJSON("data/skills.json?res=" + Math.random(), {}, function(res) {
+                var template = $("#template-lenguaje").html();
+                for (var i in res.lenguajes) {
+                    var len = res.lenguajes[i];
+                    var t = $(template);
+                    $(".lenguajes").append(t);
+                    t.find(".nombre").text(len.nombre);
+                    t.find(".imagen").attr("src", len.icon);
+                }
+                for (var i in res.frameworks) {
+                    var len = res.frameworks[i];
+                    var t = $(template);
+                    $(".frameworks").append(t);
+                    t.find(".nombre").text(len.nombre);
+                    t.find(".imagen").attr("src", len.icon);
+                }
+
 
             });
+        });
+    </script>
+</body>
 
-        </script>
-    </body>
 </html>

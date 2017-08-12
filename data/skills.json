@@ -1,0 +1,40 @@
+{
+    "lenguajes": [{
+            "nombre": "Javascript",
+            "icon": "res/img/javascript.png"
+        },
+        {
+            "nombre": "Java",
+            "icon": "res/img/java.png"
+        },
+        {
+            "nombre": "C#",
+            "icon": "res/img/csharp.png"
+        },
+        {
+            "nombre": "PHP",
+            "icon": "res/img/php.png"
+        },
+        {
+            "nombre": "HTML5",
+            "icon": "res/img/html5.jpg"
+        },
+        {
+            "nombre": "Python",
+            "icon": "res/img/python.png"
+        }
+    ],
+    "frameworks": [{
+            "nombre": "Spring",
+            "icon": "res/img/spring.png"
+        },
+        {
+            "nombre": "Silex",
+            "icon": "res/img/silex.jpg"
+        },
+        {
+            "nombre": ".NET MVC",
+            "icon": "res/img/aspmvc.png"
+        }
+    ]
+}
