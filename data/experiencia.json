@@ -1,0 +1,44 @@
+{
+    "laboral":[
+        {
+            "lugar":"Secretaria de Finzas, Gobierno del Estado Oaxaca",
+            "duracion":"4 meses",
+            "fecha":" Marzo 2013",
+            "puesto":"Desarrollador en Soporte Técnico",
+            "responsabilidades":"Mantenimiento y desarrollo de software para elboracion de requisiciones sobre el Padron Vehicular"
+        },
+        {
+            "lugar":"Evolutel S.A. de C.V. Guadalajara,Jalisco",
+            "duracion":"Actualmente",
+            "fecha":" Marzo 2015",
+            "puesto":"Desarrollador",
+            "responsabilidades":"Gestion y desarrollo de software, Desarrollo de Aplicaciones móviles."
+        }
+    ],
+    "academica":[
+        {
+            "lugar":"as",
+            "periodo":"a",
+            "titulo":"a",
+            "icon":"a"
+        }
+    ],
+    "actividades":[
+        {
+            "lugar":"a",
+            "periodo":"a",
+            "nombre":"a",
+            "icon":"a"
+        }
+    ],
+    "extas":[
+        {
+            "lugar":"a",
+            "periodo":"a",
+            "nombre":"a",
+            "icon":"a"
+        }
+    ]
+
+
+}

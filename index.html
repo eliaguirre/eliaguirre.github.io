@@ -42,7 +42,7 @@
         }
 
         main>div {
-            height: 100%;
+            min-height: 100%;
         }
 
         img.center,
@@ -60,11 +60,12 @@
             width: 150px
         }
 
-        .card .card-content {
+        #skills .card .card-content {
             padding: 12px;
             text-align: center;
         }
-        .cita{
+
+        .cita {
             border-left: 3px solid #5e35b1;
             padding-left: 20px;
             margin-top: 52px;
@@ -84,7 +85,7 @@
             <li><a href="#main"><i class="material-icons red-text ">person</i> Perfil</a></li>
             <li><a href="#experiencia"><i class="material-icons green-text">update</i> Experiencia</a></li>
             <li><a href="#skills"><i class="material-icons orange-text">show_chart</i> Skills</a></li>
-            <li><a href="#!"><i class="material-icons teal-text">layers</i> Proyectos</a></li>
+            <li><a href="#proyectos"><i class="material-icons teal-text">layers</i> Proyectos</a></li>
         </ul>
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons purple-text darken-1">menu</i></a>
     </header>
@@ -97,15 +98,14 @@
                     <h3>
                         Felix Eli Lopez Aguirre
                     </h3>
-
                     <h5>Developer Web and Mobile<h5>
                 </div>
                 <div class="cita">
                     <p>
-                        Tel: 951 294 31 55
+                        Tel: <a href="tel:+5219512943155">951 294 31 55</a>
                     </p>
                     <p>
-                        Correo: f.eli.x@hotmail.es
+                        Correo:<a href="mailto:f.eli.x@hotmail.es">f.eli.x@hotmail.es</a>
                     </p>
                 </div>
                 <div>
@@ -117,12 +117,20 @@
         </div>
         <div id="experiencia">
             <div class="container">
+                <h2 class="header" >Experiencia</h2>
+                <div class="divider">
+                </div>
+                <h5>Laboral</h5>
+                    <div class="row laboral">
+
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="skills" style="padding-top:30px">
-            <div class="container">
-                <h2 class="header" >Habilidades</h2>
-                <div class="divider"></div>
+            <div id="skills" style="padding-top:30px">
+                <div class="container">
+                    <h2 class="header">Habilidades</h2>
+                    <div class="divider">
+                    </div>
                     <h5>Lenguajes</h5>
                     <div class="row lenguajes">
                     </div>
@@ -134,6 +142,13 @@
                     </div>
                     <h5>Tools</h5>
                     <div class="row tools">
+                    </div>
+                </div>
+            </div>
+            <div id="proyectos">
+                <div class="container">
+                    <h2 class="header">Proyectos</h2>
+                    <div class="divider">
                     </div>
                 </div>
             </div>
@@ -151,11 +166,41 @@
             </div>
         </div>
     </div>
+    <div style="display:none" id="template-row">
+        <div class="col m12">
+            <div class="card">
+                <div class="card-image">
+                    <img class="imagen">
+                </div>
+                <div class="card-content">
+                    <p><text class="lugar bold"></text> <small class="duracion"></small></p>
+                    <p class="puesto deep-purple-text darken-5"></p>
+                    <p class="grey-text">Responsabilidades: <text class="responsabilidades"></text></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
     <script>
         $(document).ready(function() {
             $(".button-collapse").sideNav();
+
+            $.getJSON("data/experiencia.json?res=" + Math.random(), {}, function(res) {
+                var template = $("#template-row").html();
+                console.log(res.laboral)
+                for (var i in res.laboral) {
+                    var len = res.laboral[i];
+                    var t = $(template);
+                    $(".laboral").append(t);
+                    t.find(".lugar").text(len.lugar);
+                    t.find(".puesto").text(len.puesto);
+                    t.find(".duracion").text(len.duracion);
+                    t.find(".responsabilidades").text(len.responsabilidades);
+                }
+
+
+            });
             $.getJSON("data/skills.json?res=" + Math.random(), {}, function(res) {
                 var template = $("#template-lenguaje").html();
                 for (var i in res.lenguajes) {
@@ -186,8 +231,6 @@
                     t.find(".nombre").text(len.nombre);
                     t.find(".imagen").attr("src", len.icon);
                 }
-
-
             });
         });
     </script>

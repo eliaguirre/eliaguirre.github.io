@@ -1,0 +1,40 @@
+{
+    "data":[
+            {
+                "icon":"",
+                "nombre":"Google Play",
+                "link":"https://play.google.com/store/apps/developer?id=Eli%20Aguirre&hl=es"
+            },
+            {
+                "icon":"",
+                "nombre":"GitHub",
+                "link":"https://github.com/eliaguirre"
+            },
+            {
+                "icon":"",
+                "nombre":"comunica.me",
+                "link":"https://comunica.me/",
+                "descripcion":"Plataforma de videoconferencia multiplataforma, desarrollada en Java Spring "
+            },
+            {
+                "icon":"",
+                "nombre":"Impulse your business",
+                "link":"http://impulseyourbusiness.com/",
+                "descripcion":"Plataforma basada en la nube que permite a los usuarios crear aplicaciones moviles, administrarlas y publicarlas en las tiendas de iOS y Android"
+            },
+            {
+                "icon":"",
+                "nombre":"BeaconScan",
+                "link":"https://github.com/eliaguirre/beaconscan",
+                "descripcion":"Snappy de Ubuntu Core que sirve para scanear beacons obtener sus datos y calcular su distancia en base al RSSI del bluetooth"
+
+            }
+
+
+
+
+    ]
+
+
+
+}

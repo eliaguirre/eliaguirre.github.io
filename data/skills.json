@@ -64,6 +64,10 @@
         {
             "nombre": "Vim",
             "icon": "res/img/vim.png"
+        },
+        {
+            "nombre": "Linux",
+            "icon": "res/img/bash.png"
         }
     ],
     "movil": [{
