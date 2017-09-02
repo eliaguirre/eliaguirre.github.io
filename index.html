@@ -98,20 +98,26 @@
                     <h3>
                         Felix Eli Lopez Aguirre
                     </h3>
-                    <h5>Developer Web and Mobile<h5>
+                    <h5>Web and Mobile Developer<h5>
                 </div>
                 <div class="cita">
                     <p>
-                        Tel: <a href="tel:+5219512943155">951 294 31 55</a>
+                        Tel:
+                        <a href="tel:+5219512943155" class="btn-flat waves-effect">
+                            951 294 31 55
+                        </a>
                     </p>
                     <p>
-                        Correo:<a href="mailto:f.eli.x@hotmail.es">f.eli.x@hotmail.es</a>
+                        Correo:
+                        <a href="mailto:f.eli.x@hotmail.es"  class="btn-flat waves-effect">
+                            f.eli.x@hotmail.es
+                        </a>
                     </p>
                 </div>
                 <div>
-                    <button class="btn-floating btn-large waves-effect waves-light red " style="position: absolute; bottom: 30px; right: 60px;">
-                        <i class="material-icons ">chevron_right</i>
-                    </button>
+                    <!--<button class="btn-floating btn-large hoverable waves-effect waves-light red " style="position: fixed; bottom: 30px; right: 60px;">
+                        <i class="material-icons ">keyboard_arrow_down</i>
+                    </button>-->
                 </div>
             </div>
         </div>
@@ -121,9 +127,14 @@
                 <div class="divider">
                 </div>
                 <h5>Laboral</h5>
-                    <div class="row laboral">
-
-                    </div>
+                <div class="row laboral">
+                </div>
+                <h5>Acad&eacute;mica</h5>
+                <div class="row academica">
+                </div>
+                <h5>Cursos y Actividades Acad&eacute;micas</h5>
+                <div class="row actividades">
+                </div>
                 </div>
             </div>
             <div id="skills" style="padding-top:30px">
@@ -156,7 +167,7 @@
     </main>
     <div style="display:none" id="template-lenguaje">
         <div class="col card-lenguajes">
-            <div class="card">
+            <div class="card hoverable">
                 <div class="card-image">
                     <img class="imagen">
                 </div>
@@ -168,7 +179,7 @@
     </div>
     <div style="display:none" id="template-row">
         <div class="col m12">
-            <div class="card">
+            <div class="card hoverable">
                 <div class="card-image">
                     <img class="imagen">
                 </div>
@@ -184,11 +195,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
     <script>
         $(document).ready(function() {
+            $('a[href^="#"]').on('click', function(event) {
+                var target = $(this.getAttribute('href'));
+                if( target.length ) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
+            });
             $(".button-collapse").sideNav();
 
             $.getJSON("data/experiencia.json?res=" + Math.random(), {}, function(res) {
                 var template = $("#template-row").html();
-                console.log(res.laboral)
                 for (var i in res.laboral) {
                     var len = res.laboral[i];
                     var t = $(template);
@@ -197,6 +216,24 @@
                     t.find(".puesto").text(len.puesto);
                     t.find(".duracion").text(len.duracion);
                     t.find(".responsabilidades").text(len.responsabilidades);
+                }
+                for (var i in res.academica) {
+                    var len = res.academica[i];
+                    var t = $(template);
+                    $(".academica").append(t);
+                    t.find(".lugar").text(len.lugar);
+                    t.find(".puesto").text(len.titulo);
+                    t.find(".duracion").text(len.periodo);
+                    t.find(".responsabilidades").parent().hide();
+                }
+                for (var i in res.actividades) {
+                    var len = res.actividades[i];
+                    var t = $(template);
+                    $(".actividades").append(t);
+                    t.find(".lugar").text(len.lugar);
+                    t.find(".puesto").text(len.nombre);
+                    t.find(".duracion").text(len.periodo);
+                    t.find(".responsabilidades").parent().hide();
                 }
 
 
