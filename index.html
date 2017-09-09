@@ -86,6 +86,7 @@
             <li><a href="#experiencia"><i class="material-icons green-text">update</i> Experiencia</a></li>
             <li><a href="#skills"><i class="material-icons orange-text">show_chart</i> Skills</a></li>
             <li><a href="#proyectos"><i class="material-icons teal-text">layers</i> Proyectos</a></li>
+            <li><a href="https://programmer-zen.blogspot.com/"><i class="material-icons purple-text">free_breakfast</i> Blog</a></li>
         </ul>
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons purple-text darken-1">menu</i></a>
     </header>
@@ -127,14 +128,14 @@
                 <div class="divider">
                 </div>
                 <h5>Laboral</h5>
-                <div class="row laboral">
-                </div>
-                <h5>Acad&eacute;mica</h5>
-                <div class="row academica">
-                </div>
-                <h5>Cursos y Actividades Acad&eacute;micas</h5>
-                <div class="row actividades">
-                </div>
+                    <div class="row laboral">
+                    </div>
+                    <h5>Acad&eacute;mica</h5>
+                    <div class="row academica">
+                    </div>
+                    <h5>Cursos y Actividades Acad&eacute;micas</h5>
+                    <div class="row actividades">
+                    </div>
                 </div>
             </div>
             <div id="skills" style="padding-top:30px">
@@ -197,7 +198,7 @@
         $(document).ready(function() {
             $('a[href^="#"]').on('click', function(event) {
                 var target = $(this.getAttribute('href'));
-                if( target.length ) {
+                if (target.length) {
                     event.preventDefault();
                     $('html, body').stop().animate({
                         scrollTop: target.offset().top
