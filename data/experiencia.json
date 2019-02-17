@@ -1,85 +1,94 @@
 {
-    "laboral": [{
-            "lugar": "Secretaria de Finzas, Gobierno del Estado Oaxaca",
-            "duracion": "4 meses",
-            "fecha": " Marzo 2013",
-            "puesto": "Desarrollador en Soporte Técnico",
-            "responsabilidades": "Mantenimiento y desarrollo de software para elboracion de requisiciones sobre el Padron Vehicular"
-        },
-        {
-            "lugar": "Evolutel S.A. de C.V. Guadalajara,Jalisco",
-            "duracion": "Actualmente",
-            "fecha": " Marzo 2015",
-            "puesto": "Desarrollador",
-            "responsabilidades": "Gestion y desarrollo de software, Desarrollo de Aplicaciones móviles."
-        }
-    ],
-    "academica": [{
-            "lugar": "Instituto Tecnológico de Oaxaca",
-            "periodo": "2009-2014",
-            "titulo": "Ingeniero en Sistemas Computacionales",
-            "icon": ""
-        },
-        {
-            "lugar": "Instituto Tecnológico Mario Molina campus Zapopan",
-            "periodo": "2016-actualmente",
-            "titulo": "Maestria en Sistemas Computacionales",
-            "icon": ""
-        }
-    ],
-    "actividades": [{
-        "lugar": "Instituto Tecnológico de Oaxaca",
-        "periodo": "Noviembre, 2009",
-        "nombre": "Curso de PHP",
-        "icon": ""
-    },{
-        "lugar": "Instituto Tecnológico de Oaxaca",
-        "periodo": "Noviembre, 2010",
-        "nombre": "Curso de Cableado estructurado",
-        "icon": ""
+  "laboral": [{
+    "lugar": "Evolutel S.A. de C.V. Guadalajara,Jalisco",
+    "duracion": "Actualmente",
+    "fecha": " Marzo 2015",
+    "puesto": "Desarrollador",
+    "responsabilidades": "Gestion y desarrollo de software, Desarrollo de Aplicaciones móviles."
+  }, {
+    "lugar": "Secretaria de Finzas, Gobierno del Estado Oaxaca",
+    "duracion": "4 meses",
+    "fecha": " Marzo 2013",
+    "puesto": "Desarrollador en Soporte Técnico",
+    "responsabilidades": "Mantenimiento y desarrollo de software para elboracion de requisiciones sobre el Padron Vehicular"
+  }],
+  "academica": [{
+    "lugar": "Instituto Tecnológico Mario Molina campus Zapopan",
+    "periodo": "2016-2018",
+    "titulo": "Maestria en Sistemas Computacionales",
+    "icon": ""
+  }, {
+    "lugar": "Instituto Tecnológico de Oaxaca",
+    "periodo": "2009-2014",
+    "titulo": "Ingeniero en Sistemas Computacionales",
+    "icon": ""
+  }],
+  "actividades": [{
+      "lugar": "Instituto Tecnológico de Oaxaca",
+      "periodo": "Noviembre, 2009",
+      "nombre": "Curso de PHP",
+      "icon": ""
+    }, {
+      "lugar": "Instituto Tecnológico de Oaxaca",
+      "periodo": "Noviembre, 2010",
+      "nombre": "Curso de Cableado estructurado",
+      "icon": ""
     },
     {
-        "lugar": "Instituto Tecnológico de Oaxaca",
-        "periodo": "Noviembre, 2011",
-        "nombre": "Curso de Programación de gals",
-        "icon": ""
+      "lugar": "Instituto Tecnológico de Oaxaca",
+      "periodo": "Noviembre, 2011",
+      "nombre": "Curso de Programación de gals",
+      "icon": ""
     },
     {
-        "lugar": "Instituto Tecnológico de Oaxaca",
-        "periodo": "Noviembre, 2011 ",
-        "nombre": "1er. Concurso de programación",
-        "icon": ""
+      "lugar": "Instituto Tecnológico de Oaxaca",
+      "periodo": "Noviembre, 2011 ",
+      "nombre": "1er. Concurso de programación",
+      "icon": ""
     },
     {
-        "lugar": "IBM",
-        "periodo": "Mayo, 2013",
-        "nombre": "Foro Tecnológico: infraestructura inteligente",
-        "icon": "a"
+      "lugar": "IBM",
+      "periodo": "Mayo, 2013",
+      "nombre": "Foro Tecnológico: infraestructura inteligente",
+      "icon": "a"
     },
     {
-        "lugar": "SNIT Oaxaca",
-        "periodo": "Mayo, 2013",
-        "nombre": "1er Concurso de Programación.",
-        "icon": "a"
+      "lugar": "SNIT Oaxaca",
+      "periodo": "Mayo, 2013",
+      "nombre": "1er Concurso de Programación.",
+      "icon": "a"
     },
     {
-        "lugar": "CECyTE",
-        "periodo": "Octubre, 2013",
-        "nombre": " Foro Mi experiencia como programador (ponente).",
-        "icon": ""
+      "lugar": "CECyTE",
+      "periodo": "Octubre, 2013",
+      "nombre": " Foro Mi experiencia como programador (ponente).",
+      "icon": ""
     },
     {
-        "lugar": "DW Software",
-        "periodo": "Octubre 2015",
-        "nombre": "Certificación Android Básico.",
-        "icon": ""
-    }],
-    "extas": [{
-        "lugar": "a",
-        "periodo": "a",
-        "nombre": "a",
-        "icon": "a"
-    }]
+      "lugar": "DW Software",
+      "periodo": "Octubre 2015",
+      "nombre": "Certificación Android Básico.",
+      "icon": ""
+    },
+    {
+      "lugar": "Hack_hive",
+      "periodo": "Noviembre 2017",
+      "nombre": "Paypal Certified Developer",
+      "icon": ""
+    },
+    {
+      "lugar": "Guadalajara Jalisco",
+      "periodo": "Octubre 2018",
+      "nombre": "México cumbre de negocios.",
+      "icon": ""
+    }
+  ],
+  "extas": [{
+    "lugar": "a",
+    "periodo": "a",
+    "nombre": "a",
+    "icon": "a"
+  }]
 
 
 }
